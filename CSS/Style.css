@@ -394,7 +394,7 @@ header svg {
   margin-left: 21.33px;
 }
 .product-container .products article .price {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-left: 21.33px;
   margin-right: 21px;
@@ -407,8 +407,6 @@ header svg {
   background: #0d1b39;
   border-radius: 50%;
   padding: 12px;
-  width: 48px;
-  height: 48px;
   margin-left: 121px;
 }
 .product-container .products article .price span {

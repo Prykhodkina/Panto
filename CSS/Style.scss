@@ -374,7 +374,7 @@ header{
         margin-left: 21.33px;
       }
       .price{
-        display: flex;
+        display: inline-flex;
         align-items: center;
         margin-left: 21.33px;
         margin-right: 21px;
@@ -386,8 +386,6 @@ header{
           background: #0d1b39;
           border-radius: 50%;
           padding: 12px;
-          width: 48px;
-          height: 48px;
           margin-left: 121px;
         }
         span{
