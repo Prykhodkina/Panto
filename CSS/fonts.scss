@@ -1,19 +1,59 @@
-.materials {
-  position: absolute;
-  top: -56px;
-  z-index: -1;
-  right: 0;
-}
-.materials2 {
-
-  position: absolute;
-  z-index: -1;
-  width: 555px;
-  height: 423px;
-  transform: rotate(-180deg);
-  opacity: 0.5;
-  border-radius: 49px;
-  left: 1px;
-  top: 52px;
+:root {
+  --font-family: "Gilroy-Medium", sans-serif;
+  --second-family: "Gilroy-Regular", sans-serif;
+  --third-family: "Gilroy-Bold", sans-serif;
+  --font3: "Inter", sans-serif;
+  --font4: "DM Sans", sans-serif;
+  --font5: "Gilroy-SemiBold", sans-serif;
 }
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../Fonts/Gilroy-Bold.eot');
+  src: url('../Fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/Gilroy-Bold.woff2') format('woff2'),
+  url('../Fonts/Gilroy-Bold.woff') format('woff'),
+  url('../Fonts/Gilroy-Bold.ttf') format('truetype'),
+  url('../Fonts/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../Fonts/Gilroy-Medium.eot');
+  src: url('../Fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/Gilroy-Medium.woff2') format('woff2'),
+  url('../Fonts/Gilroy-Medium.woff') format('woff'),
+  url('../Fonts/Gilroy-Medium.ttf') format('truetype'),
+  url('../Fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../Fonts/Gilroy-Regular.eot');
+  src: url('../Fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/Gilroy-Regular.woff2') format('woff2'),
+  url('../Fonts/Gilroy-Regular.woff') format('woff'),
+  url('../Fonts/Gilroy-Regular.ttf') format('truetype'),
+  url('../Fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url('../Fonts/Gilroy-Semibold.eot');
+  src: url('../Fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/Gilroy-Semibold.woff2') format('woff2'),
+  url('../Fonts/Gilroy-Semibold.woff') format('woff'),
+  url('../Fonts/Gilroy-Semibold.ttf') format('truetype'),
+  url('../Fonts/Gilroy-Semibold.svg#Gilroy-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,3 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --font-family: "Gilroy-Medium", sans-serif;
+  --second-family: "Gilroy-Regular", sans-serif;
+  --third-family: "Gilroy-Bold", sans-serif;
+  --font3: "Inter", sans-serif;
+  --font4: "DM Sans", sans-serif;
+  --font5: "Gilroy-SemiBold", sans-serif;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../Fonts/Gilroy-Bold.eot");
+  src: url("../Fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Bold.woff2") format("woff2"), url("../Fonts/Gilroy-Bold.woff") format("woff"), url("../Fonts/Gilroy-Bold.ttf") format("truetype"), url("../Fonts/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../Fonts/Gilroy-Medium.eot");
+  src: url("../Fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Medium.woff2") format("woff2"), url("../Fonts/Gilroy-Medium.woff") format("woff"), url("../Fonts/Gilroy-Medium.ttf") format("truetype"), url("../Fonts/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../Fonts/Gilroy-Regular.eot");
+  src: url("../Fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Regular.woff2") format("woff2"), url("../Fonts/Gilroy-Regular.woff") format("woff"), url("../Fonts/Gilroy-Regular.ttf") format("truetype"), url("../Fonts/Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("../Fonts/Gilroy-Semibold.eot");
+  src: url("../Fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Semibold.woff2") format("woff2"), url("../Fonts/Gilroy-Semibold.woff") format("woff"), url("../Fonts/Gilroy-Semibold.ttf") format("truetype"), url("../Fonts/Gilroy-Semibold.svg#Gilroy-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +48,9 @@
 body {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #fff 100%), url("../image/background.png");
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
+  background-position: top center;
+  overflow: initial;
+  height: 1084px;
 }
 
 .container {
@@ -24,7 +67,7 @@ header {
 }
 header a {
   margin-left: 80px;
-  font-family: sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: 0.01em;
@@ -36,13 +79,9 @@ header nav ul {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 65px;
-}
-header nav ul li {
-  position: relative;
 }
 header nav ul li a {
-  font-family: sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -57,34 +96,107 @@ header svg {
 }
 .container .banner {
   margin: auto;
-  padding-bottom: 644px;
+  text-align: center;
 }
-.container .banner .svg-element1 {
+.container .banner .svg-element1:hover:before {
   position: absolute;
-  top: 563px;
+  top: 495px;
+  left: 104px;
+  content: url("../image/hover-circle3.svg");
+  fill: rgba(255, 255, 255, 0.2);
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  border-radius: 36px;
+  width: 112px;
+  height: 48px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.25) 100%, rgba(255, 255, 255, 0.3) 100%);
+}
+.container .banner .svg-element1 svg {
+  position: absolute;
+  top: 550px;
   left: 103px;
+  border-radius: 100%;
+  padding: 10.86px;
+  fill: rgba(255, 255, 255, 0.2);
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  transition: 0.5s;
 }
-.container .banner .svg-element2 {
+.container .banner .svg-element1 svg:hover {
+  padding: 19px;
+  width: 18px;
+  height: 18px;
+}
+.container .banner .svg-element2 svg {
+  transition: 0.5s;
   position: absolute;
-  top: 405px;
-  left: 247px;
+  top: 495px;
+  left: 300px;
+  border-radius: 100%;
+  padding: 10.86px;
+  fill: rgba(255, 255, 255, 0.2);
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
 }
-.container .banner .svg-element3 {
+.container .banner .svg-element2 svg:hover {
+  padding: 19px;
+  width: 18px;
+  height: 18px;
+}
+.container .banner .svg-element2:hover:before {
+  content: url("../image/group5392.svg");
+  position: absolute;
+  top: 495px;
+  left: 300px;
+}
+.container .svg-element3 svg {
   position: absolute;
   left: 800px;
   top: 600px;
+  border-radius: 100%;
+  padding: 10.86px;
+  fill: rgba(255, 255, 255, 0.2);
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  transition: 0.5s;
 }
-.container .banner .svg-element4 {
+.container .svg-element3 svg:hover {
+  padding: 19px;
+  width: 18px;
+  height: 18px;
+}
+.container .svg-element3:hover:before {
+  content: url("../image/group5392.svg");
+  position: fixed;
+}
+.container .svg-element4 svg {
   position: absolute;
   right: 34px;
   top: 632px;
+  border-radius: 100%;
+  padding: 10.86px;
+  fill: rgba(255, 255, 255, 0.2);
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  transition: 0.5s;
 }
-.container .banner article {
-  margin: auto;
+.container .svg-element4 svg:hover {
+  padding: 19px;
+  width: 18px;
+  height: 18px;
+}
+.container .svg-element4:hover:before {
+  content: url("../image/group5392.svg");
+  position: fixed;
+}
+.container article {
+  justify-content: center;
   text-align: center;
+  margin-bottom: 644px;
 }
-.container .banner article h1 {
-  font-family: sans-serif;
+.container article h1 {
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 80px;
   line-height: 130%;
@@ -94,16 +206,17 @@ header svg {
   max-width: 861px;
   margin-bottom: 14px;
 }
-.container .banner article .banner-h3 {
+.container article .banner-h3 {
   opacity: 0.8;
-  font-family: sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 160%;
+  text-align: center;
   color: #fff;
   margin-bottom: 43px;
 }
-.container .banner article .search {
+.container article .search {
   display: flex;
   margin: auto;
   align-items: center;
@@ -115,12 +228,12 @@ header svg {
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.15);
 }
-.container .banner article .search input {
+.container article .search .text {
   background: transparent;
   flex: 1;
   border: 0;
   outline: none;
-  font-family: var(--second-family);
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -128,15 +241,16 @@ header svg {
   color: #fff;
   opacity: 0.8;
 }
-.container .banner article .search .search-btn {
+.container article .search .search-btn {
   border: none;
   border-radius: 50%;
   padding: 11px;
   width: 40px;
   height: 40px;
   background: #e58411;
+  cursor: pointer;
 }
-.container .banner .svg-element2 ul {
+.container .svg-element2 ul {
   display: flex;
   gap: 8px;
   fill: rgba(255, 255, 255, 0.2);
@@ -144,41 +258,43 @@ header svg {
   backdrop-filter: blur(8px);
   list-style: none;
 }
-.container .choosing {
+
+.choosing {
   display: flex;
   align-items: center;
   margin-left: 80px;
   margin-bottom: 120px;
 }
-.container .choosing .choosing-h3 {
+.choosing .choosing-h3 {
   margin-right: 130px;
-  font-family: sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 42px;
   color: #1e1e1e;
   max-width: 242px;
 }
-.container .choosing .choosing-box {
+.choosing .choosing-box {
   max-width: 284px;
   margin-right: 28px;
 }
-.container .choosing .choosing-box h4 {
-  font-family: sans-serif;
+.choosing .choosing-box h4 {
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #1e1e1e;
   opacity: 0.9;
   margin-bottom: 20px;
 }
-.container .choosing .choosing-box p {
-  font-family: sans-serif;
+.choosing .choosing-box p {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 185%;
   color: #1e1e1e;
   margin-bottom: 14px;
+  opacity: 0.8;
 }
-.container .choosing .choosing-box a {
+.choosing .choosing-box a {
   font-family: sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -192,7 +308,6 @@ header svg {
 
 .product-container {
   background: #f7f7f7;
-  max-width: 1440px;
   margin: auto;
   padding-top: 50px;
   text-align: center;
@@ -201,7 +316,7 @@ header svg {
   margin-bottom: 80px;
 }
 .product-container .top-bar p {
-  font-family: sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 42px;
   color: #1e1e1e;
@@ -210,17 +325,29 @@ header svg {
 .product-container .top-bar ul {
   display: flex;
   justify-content: center;
-  gap: 21px;
   list-style: none;
+  background: #eee;
+  border-radius: 44px;
+  max-width: 348px;
+  margin: auto;
+}
+.product-container .top-bar ul li {
+  margin: 7px 19.5px;
 }
 .product-container .top-bar ul li a {
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 185%;
   color: #1e1e1e;
   opacity: 0.8;
+  transition: 0.5s;
+}
+.product-container .top-bar ul li a:hover {
+  border-radius: 32px;
+  background: #fff;
+  padding: 7px 19.5px;
 }
 .product-container .products {
   display: flex;
@@ -249,10 +376,18 @@ header svg {
 .product-container .products article .products-p {
   margin-top: 260px;
   margin-left: 21.33px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8d8d8d;
 }
 .product-container .products article h4 {
   margin-left: 21.33px;
   margin-right: 57.88px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  color: #0d1b39;
 }
 .product-container .products article a {
   margin-bottom: 37px;
@@ -263,6 +398,10 @@ header svg {
   align-items: center;
   margin-left: 21.33px;
   margin-right: 21px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  color: #0d1b39;
 }
 .product-container .products article .price svg {
   background: #0d1b39;
@@ -272,14 +411,20 @@ header svg {
   height: 48px;
   margin-left: 121px;
 }
-.product-container a {
+.product-container .products article .price span {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #0d1b39;
+}
+.product-container .view {
   display: inline-flex;
   gap: 13px;
   align-items: center;
   text-align: center;
   margin-bottom: 50px;
   text-decoration: none;
-  font-family: var(--font-family);
+  font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 185%;
@@ -294,7 +439,7 @@ header svg {
   max-width: 556px;
 }
 .container2 article h4 {
-  font-family: var(--font5);
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.17em;
@@ -303,7 +448,7 @@ header svg {
   margin-bottom: 20px;
 }
 .container2 article h3 {
-  font-family: var(--third-family);
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 42px;
   text-transform: capitalize;
@@ -311,7 +456,7 @@ header svg {
   margin-bottom: 20px;
 }
 .container2 article p {
-  font-family: var(--second-family);
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 185%;
@@ -320,7 +465,7 @@ header svg {
   margin-bottom: 20px;
 }
 .container2 article a {
-  font-family: var(--font-family);
+  font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 185%;
@@ -371,25 +516,32 @@ header svg {
   margin: 0 94px;
 }
 .container2 .experiences2 .img-background {
-  overflow: hidden;
-  background: #f7f7f7;
-  transform: rotate(-180deg);
-  border-radius: 20px;
-  width: 495px;
-  height: 422px;
+  position: relative;
 }
-.container2 .experiences2 .img-background img {
-  background: url("../image/79.svg") 40%;
-  transform: rotate(-180deg);
-  width: 555px;
+.container2 .experiences2 .img-background .materials {
+  position: absolute;
+  top: -56px;
+  z-index: -1;
+  right: 0;
+}
+.container2 .experiences2 .img-background .materials2 {
+  position: absolute;
+  z-index: -1;
+  width: 418px;
   height: 423px;
+  transform: rotate(-180deg);
+  opacity: 0.5;
+  border-radius: 49px;
+  left: 27px;
+  top: 132px;
 }
-.container2 .reviews-text {
+
+.container3 .reviews-text {
   display: block;
   margin-top: 242px;
 }
-.container2 .reviews-text p {
-  font-family: var(--font5);
+.container3 .reviews-text p {
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.17em;
@@ -398,8 +550,8 @@ header svg {
   color: #e58411;
   margin-bottom: 20px;
 }
-.container2 .reviews-text h3 {
-  font-family: var(--third-family);
+.container3 .reviews-text h3 {
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 42px;
   text-transform: capitalize;
@@ -407,37 +559,15 @@ header svg {
   color: #1e1e1e;
   margin-bottom: 60px;
 }
-.container2 .reviews {
+.container3 .reviews {
   display: flex;
   justify-content: center;
   margin-bottom: 244px;
   gap: 39px;
+  position: relative;
 }
-.container2 .reviews .reviews1 {
-  background: url("../image/reviews1.png");
-  border-radius: 18px;
-  width: 370px;
-  height: 476px;
-}
-.container2 .reviews .account {
-  background: url("../image/1.svg");
-  border-radius: 18px;
-  max-width: 334px;
-  margin-top: 219px;
-  margin-left: 18px;
-  text-align: center;
-  height: 239px;
-}
-.container2 .reviews .account:after {
-  filter: blur(50px);
-  background: url("../image/Iww.svg");
-  border-radius: 44px;
-  max-width: 300px;
-  height: 380px;
-  z-index: -1;
-}
-.container2 .reviews .account .account-p1 {
-  font-family: var(--third-family);
+.container3 .reviews .account-p1 {
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-transform: capitalize;
@@ -445,54 +575,75 @@ header svg {
   color: #1e1e1e;
   margin-bottom: 6px;
 }
-.container2 .reviews .account .account-p2 {
+.container3 .reviews .account-p2 {
   margin-bottom: 22px;
   opacity: 0.6;
-  font-family: var(--second-family);
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-align: center;
   color: #1e1e1e;
 }
-.container2 .reviews .account .account-p3 {
+.container3 .reviews .account-p3 {
   margin-bottom: 22px;
-  margin-left: 42px;
-  font-family: var(--second-family);
+  text-align: center;
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  text-align: center;
   color: #1e1e1e;
   opacity: 0.8;
   max-width: 252px;
 }
-.container2 .reviews .account img {
-  margin-top: 8px;
-}
-.container2 .reviews .account ul {
+.container3 .reviews ul {
   list-style: none;
   display: flex;
   gap: 7px;
   justify-content: center;
 }
-.container2 .reviews .account ul li a {
+.container3 .reviews ul li a {
   text-decoration: none;
 }
-.container2 .reviews .reviews2 {
-  background: url("../image/reviews2.png");
-  border-radius: 18px;
-  width: 370px;
-  height: 476px;
+.container3 .reviews .account {
+  position: absolute;
+  top: 220px;
+  left: 18px;
+  right: 18px;
+  text-align: center;
 }
-.container2 .reviews .reviews3 {
-  background: url("../image/reviews3.png");
+.container3 .reviews .account .some {
+  text-align: center;
+  backdrop-filter: blur(11px);
+  background: rgba(255, 255, 255, 0.84);
+  max-width: 334px;
+  height: 239px;
   border-radius: 18px;
-  width: 370px;
-  height: 476px;
+  position: relative;
+}
+.container3 .reviews .account:after {
+  background: url("../image/Iww.svg");
+  backdrop-filter: blur(50px);
+  max-width: 300px;
+  height: 380px;
+  z-index: -1;
+}
+.container3 .reviews .account .reviews1-img {
+  background: url("../image/456.svg");
+  border-radius: 100%;
+  width: 50px;
+  height: 55px;
+}
+.container3 .reviews .reviews1 {
+  position: relative;
+}
+.container3 .reviews .reviews2 {
+  position: relative;
+}
+.container3 .reviews .reviews3 {
+  position: relative;
 }
 
-footer .container {
+footer {
   background: #f7f7f7;
-  justify-content: space-between;
 }
 footer .container .aside-container {
   display: flex;
@@ -505,7 +656,7 @@ footer .container .aside-container .aside-first {
 }
 footer .container .aside-container .aside-first a {
   text-decoration: none;
-  font-family: var(--third-family);
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: 0.01em;
@@ -514,7 +665,7 @@ footer .container .aside-container .aside-first a {
 }
 footer .container .aside-container .aside-first p {
   opacity: 0.8;
-  font-family: var(--font-family);
+  font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
@@ -525,7 +676,7 @@ footer .container .aside-container .aside {
   margin-right: 110px;
 }
 footer .container .aside-container h3 {
-  font-family: var(--font4);
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 17px;
   letter-spacing: -0.01em;
@@ -540,7 +691,7 @@ footer .container .aside-container ul li {
 }
 footer .container .aside-container ul li a {
   text-decoration: none;
-  font-family: var(--font-family);
+  font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
@@ -563,6 +714,26 @@ footer .container .aside-container .aside-last a {
   display: flex;
   align-items: flex-start;
   text-align: left;
+}
+footer .last-p1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: #1e2833;
+  opacity: 0.5;
+}
+footer .last {
+  display: inline-flex;
+  gap: 40px;
+}
+footer .last .last-p2 {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #1e1e1e;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=Style.css.map */
