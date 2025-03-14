@@ -34,7 +34,6 @@ header{
       color: #fff;
       text-decoration: none;
     }
-
     nav {
       ul {
         display: flex;
@@ -57,116 +56,45 @@ header{
 
 }
 .container {
-  position: relative;
   .banner {
     margin: auto;
     text-align: center;
-    .svg-element1 {
-      &:hover:before {
-        position: absolute;
-        top: 495px;
-        left: 104px;
-        content: url("../image/hover-circle3.svg");
-        fill: rgba(255, 255, 255, 0.2);
-        border: 0.86px solid rgba(255, 255, 255, 0.6);
-        border-radius: 36px;
-        width: 112px;
-        height: 48px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.25) 100%, rgba(255, 255, 255, 0.3) 100%);
-      }
-      svg {
-        position: absolute;
-        top: 550px;
-        left: 103px;
-        border-radius: 100%;
-        padding: 10.86px;
-        fill: rgba(255, 255, 255, 0.2);
-        border: 0.86px solid rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(8px);
-        transition: 0.5s;
-        &:hover {
-          padding: 19px;
-          width: 18px;
-          height: 18px;
+    position: relative;
+    .svg-element {
+      margin-bottom: 555px;
+      .svg-element1 {
+        svg {
+          position: absolute;
+          top: 545px;
+          left: -174px;
         }
       }
-    }
-    .svg-element2 {
-      svg {
-        transition: 0.5s;
-        position: absolute;
-        top: 495px;
-        left: 300px;
-        border-radius: 100%;
-        padding: 10.86px;
-        fill: rgba(255, 255, 255, 0.2);
-        border: 0.86px solid rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(8px);
-        &:hover {
-          padding: 19px;
-          width: 18px;
-          height: 18px;
+      .svg-element2 {
+        img {
+          position: absolute;
+          top: 405px;
+          left: -40px;
         }
       }
-      &:hover:before {
-        content: url("../image/group5392.svg");
-        position: absolute;
-        top: 495px;
-        left: 300px;
+      .svg-element3 {
+        svg {
+          position: absolute;
+          left: 515px;
+          top: 600px;
+        }
       }
-    }
-  }
-  .svg-element3 {
-    svg {
-      position: absolute;
-      left: 800px;
-      top: 600px;
-      border-radius: 100%;
-      padding: 10.86px;
-      fill: rgba(255, 255, 255, 0.2);
-      border: 0.86px solid rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(8px);
-      transition: 0.5s;
-      &:hover {
-        padding: 19px;
-        width: 18px;
-        height: 18px;
+      .svg-element4 {
+        svg {
+          position: absolute;
+          right: -254px;
+          top: 632px;
+        }
       }
-    }
-    &:hover:before {
-      content: url("../image/group5392.svg");
-      position: fixed;
-    }
-  }
-  .svg-element4 {
-    svg {
-      position: absolute;
-      right: 34px;
-      top: 632px;
-      border-radius: 100%;
-      padding: 10.86px;
-      fill: rgba(255, 255, 255, 0.2);
-      border: 0.86px solid rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(8px);
-      transition: 0.5s;
-
-      &:hover {
-        padding: 19px;
-        width: 18px;
-        height: 18px;
-      }
-    }
-    &:hover:before {
-      content: url("../image/group5392.svg");
-      position: fixed;
     }
   }
   article {
     justify-content: center;
     text-align: center;
-    margin-bottom: 644px;
     h1 {
       font-family: "Gilroy-Bold", sans-serif;
       font-weight: 400;
@@ -200,7 +128,6 @@ header{
       max-width: 344px;
       backdrop-filter: blur(8px);
       background: rgba(255, 255, 255, 0.15);
-
       .text {
         background: transparent;
         flex: 1;
@@ -285,7 +212,6 @@ header{
 
 .product-container{
   background: #f7f7f7;
-
   margin: auto;
   padding-top: 50px;
   text-align: center;
@@ -301,15 +227,14 @@ header{
     ul {
       display: flex;
       justify-content: center;
-
       list-style: none;
       background: #eee;
       border-radius: 44px;
       max-width: 348px;
       margin: auto;
-
+      padding: 7px 12px;
       li {
-        margin: 7px 19.5px;
+
         a {
           text-decoration: none;
           font-family: 'Gilroy-Regular', sans-serif;
@@ -319,13 +244,14 @@ header{
           color: #1e1e1e;
           opacity: 0.8;
           transition: 0.5s;
-          &:hover{
-            border-radius: 32px;
-            background: #fff;
-            padding: 7px 19.5px;
-          }
+          margin: 7px 21px;
         }
 
+        &:hover {
+          border-radius: 32px;
+          background: #fff;
+
+        }
       }
     }
 
@@ -707,7 +633,6 @@ footer{
           align-items: flex-start;
           text-align: left;
         }
-
       }
     }
   }

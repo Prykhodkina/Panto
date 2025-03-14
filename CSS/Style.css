@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-:root {
-  --font-family: "Gilroy-Medium", sans-serif;
-  --second-family: "Gilroy-Regular", sans-serif;
-  --third-family: "Gilroy-Bold", sans-serif;
-  --font3: "Inter", sans-serif;
-  --font4: "DM Sans", sans-serif;
-  --font5: "Gilroy-SemiBold", sans-serif;
-}
-
 @font-face {
   font-family: "Gilroy-Bold";
   src: url("../Fonts/Gilroy-Bold.eot");
@@ -91,109 +82,37 @@ header svg {
   margin-right: 80px;
 }
 
-.container {
-  position: relative;
-}
 .container .banner {
   margin: auto;
   text-align: center;
+  position: relative;
 }
-.container .banner .svg-element1:hover:before {
+.container .banner .svg-element {
+  margin-bottom: 555px;
+}
+.container .banner .svg-element .svg-element1 svg {
   position: absolute;
-  top: 495px;
-  left: 104px;
-  content: url("../image/hover-circle3.svg");
-  fill: rgba(255, 255, 255, 0.2);
-  border: 0.86px solid rgba(255, 255, 255, 0.6);
-  border-radius: 36px;
-  width: 112px;
-  height: 48px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.25) 100%, rgba(255, 255, 255, 0.3) 100%);
+  top: 545px;
+  left: -174px;
 }
-.container .banner .svg-element1 svg {
+.container .banner .svg-element .svg-element2 img {
   position: absolute;
-  top: 550px;
-  left: 103px;
-  border-radius: 100%;
-  padding: 10.86px;
-  fill: rgba(255, 255, 255, 0.2);
-  border: 0.86px solid rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  transition: 0.5s;
+  top: 405px;
+  left: -40px;
 }
-.container .banner .svg-element1 svg:hover {
-  padding: 19px;
-  width: 18px;
-  height: 18px;
-}
-.container .banner .svg-element2 svg {
-  transition: 0.5s;
+.container .banner .svg-element .svg-element3 svg {
   position: absolute;
-  top: 495px;
-  left: 300px;
-  border-radius: 100%;
-  padding: 10.86px;
-  fill: rgba(255, 255, 255, 0.2);
-  border: 0.86px solid rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-}
-.container .banner .svg-element2 svg:hover {
-  padding: 19px;
-  width: 18px;
-  height: 18px;
-}
-.container .banner .svg-element2:hover:before {
-  content: url("../image/group5392.svg");
-  position: absolute;
-  top: 495px;
-  left: 300px;
-}
-.container .svg-element3 svg {
-  position: absolute;
-  left: 800px;
+  left: 515px;
   top: 600px;
-  border-radius: 100%;
-  padding: 10.86px;
-  fill: rgba(255, 255, 255, 0.2);
-  border: 0.86px solid rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  transition: 0.5s;
 }
-.container .svg-element3 svg:hover {
-  padding: 19px;
-  width: 18px;
-  height: 18px;
-}
-.container .svg-element3:hover:before {
-  content: url("../image/group5392.svg");
-  position: fixed;
-}
-.container .svg-element4 svg {
+.container .banner .svg-element .svg-element4 svg {
   position: absolute;
-  right: 34px;
+  right: -254px;
   top: 632px;
-  border-radius: 100%;
-  padding: 10.86px;
-  fill: rgba(255, 255, 255, 0.2);
-  border: 0.86px solid rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  transition: 0.5s;
-}
-.container .svg-element4 svg:hover {
-  padding: 19px;
-  width: 18px;
-  height: 18px;
-}
-.container .svg-element4:hover:before {
-  content: url("../image/group5392.svg");
-  position: fixed;
 }
 .container article {
   justify-content: center;
   text-align: center;
-  margin-bottom: 644px;
 }
 .container article h1 {
   font-family: "Gilroy-Bold", sans-serif;
@@ -330,9 +249,7 @@ header svg {
   border-radius: 44px;
   max-width: 348px;
   margin: auto;
-}
-.product-container .top-bar ul li {
-  margin: 7px 19.5px;
+  padding: 7px 12px;
 }
 .product-container .top-bar ul li a {
   text-decoration: none;
@@ -343,11 +260,11 @@ header svg {
   color: #1e1e1e;
   opacity: 0.8;
   transition: 0.5s;
+  margin: 7px 21px;
 }
-.product-container .top-bar ul li a:hover {
+.product-container .top-bar ul li:hover {
   border-radius: 32px;
   background: #fff;
-  padding: 7px 19.5px;
 }
 .product-container .products {
   display: flex;
