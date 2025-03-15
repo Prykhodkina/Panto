@@ -46,7 +46,11 @@ header{
             font-size: 18px;
             color: #fff;
             text-decoration: none;
-&:first-of-type:after{ content: url("../image/")}
+          }
+          &:first-of-type a:after {
+            content: url("../image/arrow-nav.svg");
+            margin-left: 12px;
+            transition: 0.5s;
           }
         }
       }
@@ -61,6 +65,65 @@ header{
     margin: auto;
     text-align: center;
     position: relative;
+    article {
+      justify-content: center;
+      text-align: center;
+      h1 {
+        font-family: "Gilroy-Bold", sans-serif;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        text-transform: capitalize;
+        color: #fff;
+        max-width: 861px;
+        margin-bottom: 14px;
+      }
+      .banner-h3 {
+        opacity: 0.8;
+        font-family: 'Gilroy-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 43px;
+      }
+      .search {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        border: 0.86px solid rgba(255, 255, 255, 0.6);
+        border-radius: 42px;
+        padding: 8px 8px 8px 20px;
+        width: 100%;
+        max-width: 344px;
+        backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.15);
+        .text {
+          background: transparent;
+          flex: 1;
+          border: 0;
+          outline: none;
+          font-family: 'Gilroy-Regular', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          text-align: left;
+          color: #fff;
+          opacity: 0.8;
+        }
+        .search-btn {
+          border: none;
+          border-radius: 50%;
+          padding: 11px;
+          width: 40px;
+          height: 40px;
+          background: #e58411;
+          cursor: pointer;
+        }
+      }
+    }
     .svg-element {
       margin-bottom: 555px;
       .svg-element1 {
@@ -91,76 +154,6 @@ header{
           top: 632px;
         }
       }
-    }
-  }
-  article {
-    justify-content: center;
-    text-align: center;
-    h1 {
-      font-family: "Gilroy-Bold", sans-serif;
-      font-weight: 400;
-      font-size: 80px;
-      line-height: 130%;
-      letter-spacing: -0.01em;
-      text-transform: capitalize;
-      color: #fff;
-      max-width: 861px;
-      margin-bottom: 14px;
-    }
-    .banner-h3 {
-      opacity: 0.8;
-      font-family: 'Gilroy-Regular', sans-serif;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 160%;
-      text-align: center;
-      color: #fff;
-      margin-bottom: 43px;
-    }
-
-    .search {
-      display: flex;
-      margin: auto;
-      align-items: center;
-      border: 0.86px solid rgba(255, 255, 255, 0.6);
-      border-radius: 42px;
-      padding: 8px 8px 8px 20px;
-      width: 100%;
-      max-width: 344px;
-      backdrop-filter: blur(8px);
-      background: rgba(255, 255, 255, 0.15);
-      .text {
-        background: transparent;
-        flex: 1;
-        border: 0;
-        outline: none;
-        font-family: 'Gilroy-Regular', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 150%;
-        text-align: left;
-        color: #fff;
-        opacity: 0.8;
-      }
-      .search-btn {
-        border: none;
-        border-radius: 50%;
-        padding: 11px;
-        width: 40px;
-        height: 40px;
-        background: #e58411;
-        cursor: pointer;
-      }
-    }
-  }
-  .svg-element2 {
-    ul {
-      display: flex;
-      gap: 8px;
-      fill: rgba(255, 255, 255, 0.2);
-      border: 0.86px solid rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(8px);
-      list-style: none;
     }
   }
 }
@@ -215,9 +208,11 @@ header{
   background: #f7f7f7;
   margin: auto;
   padding-top: 50px;
-  text-align: center;
+
   .top-bar{
     margin-bottom: 80px;
+    text-align: center;
+
     p{
       font-family: 'Gilroy-Bold', sans-serif;
       font-weight: 400;
@@ -232,10 +227,12 @@ header{
       background: #eee;
       border-radius: 44px;
       max-width: 348px;
+      align-items: center;
       margin: auto;
-      padding: 7px 12px;
+      padding: 7px 19.5px;
       li {
-
+        transition: 0.5s;
+        padding: 5px 6.5px;
         a {
           text-decoration: none;
           font-family: 'Gilroy-Regular', sans-serif;
@@ -244,18 +241,14 @@ header{
           line-height: 185%;
           color: #1e1e1e;
           opacity: 0.8;
-          transition: 0.5s;
-          margin: 7px 21px;
+          margin: 19.5px;
         }
-
         &:hover {
           border-radius: 32px;
           background: #fff;
-
         }
       }
     }
-
   }
   .products{
     display: flex;
@@ -266,23 +259,18 @@ header{
     article{
       border-radius: 20px;
       max-width: 268px;
-      height: 441px;
+
       background: linear-gradient(to top,  #fff 50%, #fafafa 50%);
       position: relative;
       .chair{
         position: absolute;
         top:-37px;
         right: 26px;
-        &:after{
-          content: url("../image/321.svg");
-          fill: rgba(0, 0, 0, 0.09);
-          filter: blur(24.371517181396484px);
-
-        }
       }
       .products-p{
         margin-top: 260px;
         margin-left: 21.33px;
+        margin-bottom: 7px;
         font-family: "Inter", sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -290,48 +278,65 @@ header{
       }
       h4{
         margin-left: 21.33px;
-        margin-right: 57.88px;
+        margin-bottom: 6px;
         font-family: "Inter", sans-serif;
         font-weight: 600;
         font-size: 21px;
         color: #0d1b39;
       }
-      a{
-        margin-bottom: 37px;
+      ul{
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
         margin-left: 21.33px;
+        margin-right: 143.19px;
+        li{
+          a{
+            padding: 4px;
+          }
+        }
       }
       .price{
-        display: inline-flex;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        margin-left: 21.33px;
-        margin-right: 21px;
+        margin: 36.56px 21.33px 27.42px;
         font-family: "Inter", sans-serif;
         font-weight: 600;
         font-size: 21px;
         color: #0d1b39;
-        svg{
-          background: #0d1b39;
-          border-radius: 50%;
-          padding: 12px;
-          margin-left: 121px;
+        a{
+          svg {
+            background: #0d1b39;
+            border-radius: 50%;
+            padding: 12px;
+            transition: 0.5s;
+            &:hover path {
+              fill: #0d1b39;
+            }
+            &:hover {
+              background: none;
+              border: #0d1b39;
+
+            }
+          }
         }
         span{
           font-family: "Inter", sans-serif;
           font-weight: 600;
           font-size: 15px;
           color: #0d1b39;
+          vertical-align: text-top;
         }
-
       }
     }
-
   }
   .view{
-    display: inline-flex;
+    display: flex;
     gap: 13px;
     align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
     text-decoration: none;
     font-family: 'Gilroy-Medium', sans-serif;
     font-weight: 400;

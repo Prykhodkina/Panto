@@ -1,0 +1,24 @@
+@media only screen and (max-width: 360px){
+.container{
+  margin: 15px;
+  .banner{
+    h1{
+      font-size: 20px;
+    }
+    .banner-h3 {
+      font-size: 14px;
+    }
+    .svg-element{
+      display: none;
+    }
+    article{
+      .search{
+        padding: 4px 4px 4px 10px;
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+}

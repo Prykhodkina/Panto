@@ -1,0 +1,20 @@
+@media only screen and (max-width: 360px) {
+  .container {
+    margin: 15px;
+  }
+  .container .banner h1 {
+    font-size: 20px;
+  }
+  .container .banner .banner-h3 {
+    font-size: 14px;
+  }
+  .container .banner .svg-element {
+    display: none;
+  }
+  .container .banner article .search {
+    padding: 4px 4px 4px 10px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
