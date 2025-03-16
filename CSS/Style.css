@@ -40,7 +40,6 @@ body {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #fff 100%), url("../image/background.png");
   background-repeat: no-repeat;
   background-position: top center;
-  overflow: initial;
   height: 1084px;
 }
 
@@ -52,11 +51,15 @@ body {
   align-items: center;
 }
 
+.nav-but-wrap {
+  display: none;
+}
+
 header {
   padding-top: 48px;
   margin-bottom: 92px;
 }
-header a {
+header .logo {
   margin-left: 80px;
   font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
@@ -70,6 +73,8 @@ header nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  justify-content: space-between;
+  gap: 62px;
 }
 header nav ul li a {
   font-family: "Gilroy-Regular", sans-serif;
@@ -82,6 +87,9 @@ header nav ul li:first-of-type a:after {
   content: url("../image/arrow-nav.svg");
   margin-left: 12px;
   transition: 0.5s;
+}
+header nav ul li:hover:after {
+  transform: rotate(180deg);
 }
 header svg {
   margin-right: 80px;
@@ -270,29 +278,31 @@ header svg {
 .product-container .products {
   display: flex;
   justify-content: center;
-  gap: 42px;
-  margin-bottom: 62px;
-  text-align: left;
+  margin: auto;
+  max-width: 1440px;
 }
 .product-container .products article {
   border-radius: 20px;
   max-width: 268px;
   background: linear-gradient(to top, #fff 50%, #fafafa 50%);
   position: relative;
+  margin: auto;
+  text-align: center;
 }
 .product-container .products article .chair {
-  position: absolute;
-  top: -37px;
-  right: 26px;
+  margin-bottom: 26px;
+  width: 217px;
+  height: 255px;
 }
 .product-container .products article .products-p {
-  margin-top: 260px;
+  margin-top: 60px;
   margin-left: 21.33px;
   margin-bottom: 7px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #8d8d8d;
+  text-align: left;
 }
 .product-container .products article h4 {
   margin-left: 21.33px;
@@ -301,6 +311,7 @@ header svg {
   font-weight: 600;
   font-size: 21px;
   color: #0d1b39;
+  text-align: left;
 }
 .product-container .products article ul {
   display: flex;
@@ -324,6 +335,7 @@ header svg {
 }
 .product-container .products article .price a svg {
   background: #0d1b39;
+  border: 1.5px solid transparent;
   border-radius: 50%;
   padding: 12px;
   transition: 0.5s;
@@ -333,7 +345,7 @@ header svg {
 }
 .product-container .products article .price a svg:hover {
   background: none;
-  border: #0d1b39;
+  border: 1.5px solid #0d1b39;
 }
 .product-container .products article .price span {
   font-family: "Inter", sans-serif;
@@ -412,10 +424,6 @@ header svg {
   margin: 0 141px;
 }
 .container2 .experiences .back {
-  background: #f7f7f7;
-  border-radius: 20px;
-  width: 495px;
-  height: 422px;
   position: relative;
 }
 .container2 .experiences .back .img {
@@ -432,6 +440,7 @@ header svg {
   z-index: -1;
   position: absolute;
   top: -66px;
+  left: 0;
 }
 .container2 .experiences2 {
   display: flex;
@@ -461,6 +470,10 @@ header svg {
   top: 132px;
 }
 
+.container3 {
+  margin: auto;
+  max-width: 1440px;
+}
 .container3 .reviews-text {
   display: block;
   margin-top: 242px;
@@ -488,8 +501,38 @@ header svg {
   display: flex;
   justify-content: center;
   margin-bottom: 244px;
-  gap: 39px;
   position: relative;
+  align-items: center;
+}
+.container3 .reviews .owl-item {
+  text-align: center;
+}
+.container3 .reviews .owl-item active {
+  width: auto;
+  margin-right: 9px;
+}
+.container3 .reviews .owl-item cloned {
+  width: auto;
+  margin-right: 9px;
+}
+.container3 .reviews .account {
+  position: absolute;
+  top: 220px;
+  left: 68px;
+  right: 68px;
+  max-width: 334px;
+  text-align: center;
+  backdrop-filter: blur(11px);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.84) 85%, rgba(255, 255, 255, 0.84) 30%);
+  border-radius: 18px;
+}
+.container3 .reviews .account .some {
+  position: relative;
+}
+.container3 .reviews .account .reviews1-img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
 }
 .container3 .reviews .account-p1 {
   font-family: "Gilroy-Bold", sans-serif;
@@ -511,6 +554,7 @@ header svg {
 }
 .container3 .reviews .account-p3 {
   margin-bottom: 22px;
+  margin-left: 42px;
   text-align: center;
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
@@ -524,38 +568,10 @@ header svg {
   display: flex;
   gap: 7px;
   justify-content: center;
+  margin-bottom: 17px;
 }
 .container3 .reviews ul li a {
   text-decoration: none;
-}
-.container3 .reviews .account {
-  position: absolute;
-  top: 220px;
-  left: 18px;
-  right: 18px;
-  text-align: center;
-}
-.container3 .reviews .account .some {
-  text-align: center;
-  backdrop-filter: blur(11px);
-  background: rgba(255, 255, 255, 0.84);
-  max-width: 334px;
-  height: 239px;
-  border-radius: 18px;
-  position: relative;
-}
-.container3 .reviews .account:after {
-  background: url("../image/Iww.svg");
-  backdrop-filter: blur(50px);
-  max-width: 300px;
-  height: 380px;
-  z-index: -1;
-}
-.container3 .reviews .account .reviews1-img {
-  background: url("../image/456.svg");
-  border-radius: 100%;
-  width: 50px;
-  height: 55px;
 }
 .container3 .reviews .reviews1 {
   position: relative;
@@ -659,6 +675,51 @@ footer .last .last-p2 {
   line-height: 160%;
   color: #1e1e1e;
   opacity: 0.8;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: block;
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+  content: url("../image/owl.svg");
+  stroke-width: 2.17px;
+  stroke: #1e1e1e;
+  border-radius: 50%;
+  padding: 16px 14px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  content: url("../image/owl.svg");
+  transform: rotate(180deg);
+  stroke-width: 2.17px;
+  stroke: #1e1e1e;
+  border-radius: 50%;
+  padding: 16px 14px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: 15px;
+}
+
+.owl-next {
+  right: 15px;
+}
+
+.owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
 }
 
 /*# sourceMappingURL=Style.css.map */

@@ -1,24 +1,207 @@
 @media only screen and (max-width: 360px){
-.container{
-  margin: 15px;
-  .banner{
-    h1{
-      font-size: 20px;
+@import "mobile";
+  body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-size: 170%;
+  }
+  .nav-but-wrap{
+    display: inline-block;
+  }
+  header{
+    padding: 0;
+    margin: 0;
+    .logo{
+      margin-left: 15px;
+      z-index: 100;
     }
-    .banner-h3 {
-      font-size: 14px;
+    svg{
+      margin: auto;
     }
-    .svg-element{
-      display: none;
-    }
-    article{
-      .search{
-        padding: 4px 4px 4px 10px;
-        width: 100%;
+  }
+  .container {
+
+    margin: 15px;
+    .banner {
+      margin-top: 50px;
+      article {
+        margin-bottom: 60px;
+        h1 {
+          font-size: 32px;
+          text-transform: none;
+        }
+        .banner-h3 {
+          font-size: 18px;
+          text-shadow: 0.5px 0 0 black;
+        }
+        .search {
+          padding: 4px 4px 4px 8px;
+          width: 100%;
+          .text {
+            font-size: 18px;
+          }
+        }
+      }
+      .svg-element {
+        display: none;
       }
     }
-
   }
-}
+  .choosing{
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    .choosing-h3{
+      font-size: 24px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+    .choosing-box{
+      margin-right: 32px;
+      margin-bottom: 20px;
 
+      h4{
+        font-size: 24px;
+        margin-bottom: 10px;
+
+      }
+      p{
+        font-size: 16px;
+      }
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+  .product-container{
+    .top-bar{
+      ul {
+        padding: 5px 6.5px;
+        li {
+          padding: 2.5px 3.25px;
+          a {
+            margin: 16.5px;
+          }
+        }
+      }
+    }
+  }
+  .container2 {
+    .experiences {
+      flex-wrap: wrap;
+      margin-top: 106px;
+      margin-bottom: 36px;
+      .back{
+        background: none;
+        img{
+          width: 350px;
+          margin-bottom: 20px;
+        }
+        .img {
+           display: none;
+         }
+        .svg-img {
+          display: none;
+        }
+        .svg-img2 {
+          display: none;
+        }
+      }
+      article {
+        margin: 0 15px;
+        a{
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .experiences2 {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      article {
+        margin: 0 15px;
+        a{
+          margin-bottom: 50px;
+        }
+      }
+      .image {
+        align-items: center;
+        display: flex;
+        .image1 {
+          width: 158.4px;
+          height: 180px;
+        }
+        .image2 {
+          width: 158.4px;
+          height: 250.4px;
+          text-align: center;
+        }
+      }
+
+      .img-background {
+        img {
+          width: 200px;
+          height: 222.5px;
+
+        }
+
+        .materials {
+          top: -26px;
+        }
+
+        .materials2 {
+          display: none;
+        }
+      }
+    }
+  }
+  .container3{
+    .reviews-text{
+      margin-top: 26px;
+    }
+    .reviews{
+      margin-bottom: 50px;
+      .account-p3{
+        margin-left: auto;
+      }
+    }
+    .owl-carousel .owl-item img {
+      width: 100%;
+    }
+  }
+  footer {
+    .container {
+      .aside-container {
+        margin: 16px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .aside-first {
+          margin-right: 0;
+          margin-bottom: 26px;
+
+          p {
+            text-align: justify;
+          }
+        }
+        .aside {
+          margin-right: 20px;
+        }
+        ul {
+          li {
+            margin-bottom: 6px;
+          }
+        }
+      }
+      .last{
+        justify-content: space-between;
+        gap: normal;
+        text-align: center;
+      }
+      .last-p1{
+        margin-left: 6px;
+      }
+    }
+  }
 }

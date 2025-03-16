@@ -11,32 +11,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="CSS/owl.carousel.css">
+    <link rel="stylesheet" href="CSS/owl.theme.default.css">
+
+
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/media.css">
 
 
 </head>
 <body>
-<header>
+<header class="cd-header">
+    <div class="header-wrapper container">
+        <a class="logo hover-target" href="#" target="_blank">Panto</a>
+        <nav class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">Furniture</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Shop</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">About Us</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+            <a href="#" target="_blank">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.007 2.83325C20.8036 2.83325 23.9249 5.81662 24.0833 9.59688H24.0463C24.0508 9.70676 24.0296 9.81618 23.9846 9.91659H24.2058C25.9299 9.91659 27.7353 11.1116 28.4592 13.9963L28.5378 14.3367L29.6271 23.1125C30.411 28.7097 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2301 7.86761 10.0048 9.625 9.92121L9.81993 9.91659H9.93067C9.912 9.81083 9.912 9.70263 9.93067 9.59688C10.0891 5.81662 13.2104 2.83325 17.007 2.83325ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.21 11.6354 15.9217C11.6354 16.6334 12.1959 17.2104 12.8874 17.2104C13.5789 17.2104 14.1394 16.6334 14.1394 15.9217L14.1297 15.7601C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.21 19.8362 15.9217C19.8362 16.6334 20.3968 17.2104 21.0882 17.2104C21.7797 17.2104 22.3403 16.6334 22.3403 15.9217C22.3403 15.21 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.6783C14.2257 4.6783 12.0159 6.88042 12.0159 9.59688C12.0346 9.70263 12.0346 9.81083 12.0159 9.91659H21.9487C21.9093 9.81451 21.8884 9.70625 21.887 9.59688C21.887 6.88042 19.6773 4.6783 16.9515 4.6783Z" fill="white" />
+                </svg>
+            </a>
 
-    <div class="container">
-    <a href="#" target="_blank">Panto</a>
-    <nav>
-        <ul>
-            <li><a href="#" target="_blank">Furniture</a></li>
-                <li><a href="#" target="_blank">Shop</a></li>
-                    <li><a href="#" target="_blank">About Us</a></li>
-                        <li><a href="#" target="_blank">Contact </a></li>
-        </ul>
-    </nav>
-        <a href="#" target="_blank">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.007 2.83325C20.8036 2.83325 23.9249 5.81662 24.0833 9.59688H24.0463C24.0508 9.70676 24.0296 9.81618 23.9846 9.91659H24.2058C25.9299 9.91659 27.7353 11.1116 28.4592 13.9963L28.5378 14.3367L29.6271 23.1125C30.411 28.7097 27.3487 31.0636 23.1713 31.1633L22.8912 31.1666H11.1471C6.90168 31.1666 3.63027 29.6196 4.34956 23.4933L4.39861 23.1125L5.50041 14.3367C6.0437 11.2301 7.86761 10.0048 9.625 9.92121L9.81993 9.91659H9.93067C9.912 9.81083 9.912 9.70263 9.93067 9.59688C10.0891 5.81662 13.2104 2.83325 17.007 2.83325ZM12.8874 14.6331C12.1959 14.6331 11.6354 15.21 11.6354 15.9217C11.6354 16.6334 12.1959 17.2104 12.8874 17.2104C13.5789 17.2104 14.1394 16.6334 14.1394 15.9217L14.1297 15.7601C14.0524 15.1247 13.5257 14.6331 12.8874 14.6331ZM21.0882 14.6331C20.3968 14.6331 19.8362 15.21 19.8362 15.9217C19.8362 16.6334 20.3968 17.2104 21.0882 17.2104C21.7797 17.2104 22.3403 16.6334 22.3403 15.9217C22.3403 15.21 21.7797 14.6331 21.0882 14.6331ZM16.9515 4.6783C14.2257 4.6783 12.0159 6.88042 12.0159 9.59688C12.0346 9.70263 12.0346 9.81083 12.0159 9.91659H21.9487C21.9093 9.81451 21.8884 9.70625 21.887 9.59688C21.887 6.88042 19.6773 4.6783 16.9515 4.6783Z" fill="white" />
-            </svg>
-        </a>
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
     </div>
-
 </header>
+
 <main>
     <section>
         <div class="container">
@@ -153,7 +167,8 @@
                 <li><a href="#" target="_blank">Lamp</a> </li>
             </ul>
             </div>
-            <div class="products">
+
+            <div class="products owl-carousel" data-items="4">
                 <article>
                     <img class="chair" src="image/chair1.svg" alt="">
                     <p class="products-p">Chair</p>
@@ -301,13 +316,13 @@
                 </article>
 <!--                <div class="container-img"> </div>-->
                     <div class="image">
-                        <img src="image/Group48095417.png" width="223" height="250" alt="">
-                        <img src="image/Group19.svg" width="223" height="338" alt="">
+                        <img class="image1" src="image/Group48095417.png" width="223" height="250" alt="">
+                        <img class="image2" src="image/Group19.svg" width="223" height="338" alt="">
                     </div>
                     <div class="img-background">
                         <img class="materials" src="image/445.svg" alt="">
                        <img class="materials2" src="image/79.svg" alt="">
-                        <img src="image/Group48095417-3.png" width="" height="" alt="">
+                        <img src="image/Group48095417-3.png"  alt="">
                     </div>
             </div>
         </div>
@@ -319,9 +334,9 @@
                     <p>Testimonials</p>
                     <h3>Our Client Reviews</h3>
                 </div>
-            <div class="reviews">
+            <div class="reviews owl-carousel"  data-items="3">
                 <div class="reviews1">
-                    <img src="image/reviews1.png">
+                    <img src="image/reviews1.png" alt="">
                     <div class="account">
                         <img class="reviews1-img" src="image/reviews1.svg">
                         <div class="some">
@@ -403,6 +418,7 @@
             </div>
         </div>
     </section>
+</main>
     <footer>
         <div class="container">
             <div class="aside-container">
@@ -444,7 +460,13 @@
         </div>
         </div>
     </footer>
-    
-</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+<script src="JS/scripts.js"></script>
+<script src="JS/owl.carousel.js"></script>
+<script src="JS/owl.carousel.min.js"></script>
+
+
 </body>
 </html>
