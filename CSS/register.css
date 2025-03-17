@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../Fonts/Gilroy-Bold.eot");
+  src: url("../Fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Bold.woff2") format("woff2"), url("../Fonts/Gilroy-Bold.woff") format("woff"), url("../Fonts/Gilroy-Bold.ttf") format("truetype"), url("../Fonts/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../Fonts/Gilroy-Medium.eot");
+  src: url("../Fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Medium.woff2") format("woff2"), url("../Fonts/Gilroy-Medium.woff") format("woff"), url("../Fonts/Gilroy-Medium.ttf") format("truetype"), url("../Fonts/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../Fonts/Gilroy-Regular.eot");
+  src: url("../Fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Regular.woff2") format("woff2"), url("../Fonts/Gilroy-Regular.woff") format("woff"), url("../Fonts/Gilroy-Regular.ttf") format("truetype"), url("../Fonts/Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("../Fonts/Gilroy-Semibold.eot");
+  src: url("../Fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Gilroy-Semibold.woff2") format("woff2"), url("../Fonts/Gilroy-Semibold.woff") format("woff"), url("../Fonts/Gilroy-Semibold.ttf") format("truetype"), url("../Fonts/Gilroy-Semibold.svg#Gilroy-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  max-width: 500px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 168px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  position: relative;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+.form-container svg {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+.form-container .h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 52px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #f6973f;
+}
+.form-container .text-form {
+  margin-bottom: 14px;
+  text-align: start;
+  margin-left: 100px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+}
+
+.login-container {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  display: flex;
+  border: 1px solid #eaeaea;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 12px;
+  justify-content: space-between;
+}
+
+.input-container {
+  margin-left: 100px;
+  max-width: 300px;
+}
+
+.registered {
+  border-radius: 5px;
+  padding: 16px 13px;
+  text-align: center;
+  margin-bottom: 36px;
+  background: #f6973f;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  border: 1px solid #eaeaea;
+  width: 100%;
+}
+
+.account-options {
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Gilroy-Bold", sans-serif;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+}
+
+.form-container .account-options:after {
+  border: 10px solid #eaeaea;
+  max-width: 97px;
+  height: 0;
+  position: absolute;
+  top: 45px;
+  left: 100px;
+}
+.form-container .social {
+  display: flex;
+  gap: 9px;
+  list-style: none;
+  background: white;
+  margin-bottom: 16px;
+  text-decoration: none;
+  padding: 13px 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  max-width: 300px;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123%;
+  text-align: center;
+  color: #727272;
+}
+.form-container .social svg {
+  margin: 10px 10px;
+}
+.form-container .register-with {
+  margin-left: 100px;
+  padding-bottom: 50px;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,120 @@
+@import "fonts";
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.form-container {
+  max-width: 500px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 168px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  position: relative;
+  font-family: 'Gilroy-Regular', sans-serif;
+  svg {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+  }
+  .h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 52px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%;
+    color: #f6973f;
+  }
+  .text-form {
+    margin-bottom: 14px;
+    text-align: start;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+  }
+}
+.login-container{
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  display: flex;
+  border: 1px solid #eaeaea;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 12px;
+  justify-content: space-between;
+}
+.input-container{
+  margin-left: 100px;
+  max-width: 300px;
+}
+.registered{
+  border-radius: 5px;
+  padding: 16px 13px;
+  text-align: center;
+  margin-bottom: 36px;
+  background: #f6973f;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  border: 1px solid #eaeaea;
+  width: 100%;
+}
+.account-options{
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Gilroy-Bold', sans-serif;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+}
+.form-container {
+  .account-options {
+    &:after {
+      border: 10px solid #eaeaea;
+      max-width: 97px;
+      height: 0;
+      position: absolute;
+      top: 45px;
+      left: 100px;
+    }
+  }
+  .social{
+    display: flex;
+    gap: 9px;
+    list-style: none;
+    background: white;
+    margin-bottom: 16px;
+    text-decoration: none;
+    padding: 13px 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    max-width: 300px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    text-align: center;
+    color: #727272;
+  }
+  .social svg{
+    margin: 10px 10px;
+  }
+  .register-with{
+    margin-left: 100px;
+    padding-bottom: 50px;
+  }
+}
